@@ -1,0 +1,52 @@
+.k-tabstrip-items .k-state-active .k-link {
+    color: #0aa89e;
+    border-top: 3px solid #0aa89e;
+}
+.k-tabstrip-items .k-state-active, .k-panelbar .k-tabstrip-items .k-state-active, .k-ie7 .k-tabstrip-items .k-state-active .k-loading {
+    background-color: #fff;
+    background-image: none;
+    border-color: #0aa89e;
+}
+.k-state-active, .k-state-active:hover, .k-active-filter, .k-tabstrip .k-state-active {
+    background-color: #fff;
+    border-color:#0aa89e;
+    color: #333;
+}
+pager-wrap, .k-pager-wrap .k-textbox, .k-pager-wrap .k-link, .k-grouping-header .k-group-indicator, .k-gantt-toolbar .k-state-default {
+    border-color: #0aa89e;
+    background-color: #ebfbfa;
+}
+.k-state-selected, .k-state-selected:link, .k-state-selected:visited, .k-list>.k-state-selected, .k-list>.k-state-highlight, .k-panel>.k-state-selected, .k-ghost-splitbar-vertical, .k-ghost-splitbar-horizontal, .k-draghandle.k-state-selected:hover, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-marquee-color {
+    color: #fff;
+    background-color: #0aa89e;
+    border-color: #0aa89e;
+}
+.k-grid-header .k-header, .k-grid-header .k-header a:link, .k-grid-header .k-header a:hover{background-color:#066265; color:#ffffff}
+.k-header .k-grid-header {background-color:#066265;}
+.k-pager-wrap {
+    background-color: #eef9f8;}
+
+
+
+
+.k-header .btn, .k-primary {background-color:#0aa89e; }
+.k-tabstrip .k-content.k-state-active {
+    background-color: #eaf2f1;
+    color: #333;
+}
+.k-tabstrip-items .k-item.k-state-active {
+    background: #eaf2f1;
+}
+.k-block, .k-header, .k-grid-header, .k-toolbar, .k-grouping-header, .k-pager-wrap, .k-button, .k-draghandle, .k-treemap-tile, html .km-pane-wrapper .k-header {
+    background-color: #fff;
+}
+.k-tabstrip-items .k-state-default .k-link, .k-panelbar>li.k-state-default>.k-link {
+    color: #0aa89e;
+}
+.k-filter, .k-filter:link, .k-filter:hover, .k-filter:selected  {color : #ffffff}
+
+<!--Tabs-->
+.k-tabstrip-items:hover .k-item:hover {
+   
+     border-bottom: 1px solid #0aa89e;
+}

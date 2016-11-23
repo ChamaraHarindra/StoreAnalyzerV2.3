@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Store Analyzer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="your,keywords">
+<meta name="description" content="Store Analyzer">
+
+<!-- Bootstrap 3.0.2 -->
+<link type="text/css" rel="stylesheet" href="styles/bootstrap.css"/>
+<!-- Materialadmin -->
+<link type="text/css" rel="stylesheet" href="styles/materialadmin.css"/>
+<!-- Font-awesome icons -->
+<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css"/>
+<!-- Material design font icons -->
+<link type="text/css" rel="stylesheet" href="styles/material-design-iconic-font.min.css"/>
+<!--- Custom --->
+<link type="text/css" rel="stylesheet" href="styles/customLogin.css"  />
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="scripts/html5shiv.js?1422823601"></script>
+            <script type="text/javascript" src="scripts/respond.min.js?1422823601"></script>
+            <![endif]-->
+
+</head>
+
+<body class="menubar-hoverable header-fixed " cz-shortcut-listen="true">
+	
+	<!-- BEGIN LOGIN SECTION -->
+	<section class="section-account">
+		
+		<div class="card col-md-5 col-xs-11 login-box centered">
+			<div class="card-body ">
+				<div class="row">
+					<div class="col-sm-12">
+						<br>
+						<span class="text-lg text-bold text-primary">Store Analyzer</span>
+						<br><br>
+						<form class="form floating-label" action="DashboardFW.html" accept-charset="utf-8" method="post">
+							<div class="form-group">
+								<input type="text" class="form-control" id="username" name="username">
+								<label for="username">Username</label>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="password" name="password">
+								<label for="password">Password</label>
+								<p class="help-block"><a href="#">Forgotten?</a></p>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-xs-6 text-left">
+									<div class="checkbox checkbox-inline checkbox-styled">
+										<label>
+											<input type="checkbox"> <span>Remember me</span>
+										</label>
+									</div>
+								</div><!--end .col -->
+								<div class="col-xs-6 text-right">
+									<button class="btn btn-primary btn-raised" type="submit">Login</button>
+								</div><!--end .col -->
+							</div><!--end .row -->
+						</form>
+					</div><!--end .col -->
+					
+				</div><!--end .row -->
+			</div><!--end .card-body -->
+		</div><!--end .card -->
+	</section>
+	<!-- END LOGIN SECTION -->
+
+    
+<!-- BEGIN JAVASCRIPT --> 
+<!--jquery--> 
+<script src="scripts/jquery-1.11.2.min.js"></script> 
+<script src="scripts/jquery-migrate-1.2.1.min.js"></script> 
+<!--Bootstrap -->
+<script src="scripts/bootstrap.min.js"></script> 
+<!--Dynamically creates spinning for loading-->
+<script src="scripts/spin.min.js"></script>
+<!--Automatically adjust textarea height-->
+<script src="scripts/jquery.autosize.min.js"></script> 
+<!--Parse, validate, manipulate, and display dates through JavaScript-->
+<script src="scripts/moment.min.js"></script>
+<!--Mac OS X Lion-styled scrollbars feature-->
+<script src="scripts/jquery.nanoscroller.min.js"></script>
+<!-- Data Manipulate -->
+<script src="scripts/dataManipulate.js"></script> 
+<!-- Component behavior -->
+<script src="scripts/component.js"></script>
+<!--StoreAnalyzer-->
+<script src="scripts/demo.js"></script> 
+<!--Bootstrap select-->
+<script src="scripts/bootstrap-select.js"></script> 
+<!-- END JAVASCRIPT -->
+
+<div id="device-breakpoints">
+  <div class="device-xs visible-xs" data-breakpoint="xs"></div>
+  <div class="device-sm visible-sm" data-breakpoint="sm"></div>
+  <div class="device-zmdi visible-zmdi" data-breakpoint="zmdi"></div>
+  <div class="device-lg visible-lg" data-breakpoint="lg"></div>
+</div>
+</body>
+</html>
