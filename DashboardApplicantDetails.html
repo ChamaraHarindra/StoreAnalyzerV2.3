@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Store Analyzer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="your,keywords">
+<meta name="description" content="Store Analyzer">
+
+<!-- Bootstrap 3.0.2 -->
+<link type="text/css" rel="stylesheet" href="styles/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="styles/datepicker3.css"/>    
+<!-- Materialadmin -->
+<link type="text/css" rel="stylesheet" href="styles/materialadmin.css"/>
+<!-- Font-awesome icons -->
+<link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css"/>
+<!-- Material design font icons -->
+<link type="text/css" rel="stylesheet" href="styles/material-design-iconic-font.min.css"/>
+<!-- Ionicons -->
+<link type="text/css" rel="stylesheet" href="styles/ionicons.min.css"  />
+<!-- Bootstrap select -->
+<link type="text/css" rel="stylesheet" href="styles/bootstrap-select.css">
+<!--Bootstrap component styles-->
+<link type="text/css" rel="stylesheet" href="styles/dropzone-theme.css"  />
+<link type="text/css" rel="stylesheet" href="styles/select2.css"  />
+<link type="text/css" rel="stylesheet" href="styles/select2-bootstrap.css"  />
+<link type="text/css" rel="stylesheet" href="styles/typeahead.css"  />
+<!--- Custom --->
+<link type="text/css" rel="stylesheet" href="styles/custom.css"  />
+  
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="scripts/html5shiv.js?1422823601"></script>
+            <script type="text/javascript" src="scripts/respond.min.js?1422823601"></script>
+            <![endif]-->
+
+</head>
+
+<body class="menubar-hoverable header-fixed" cz-shortcut-listen="true">
+<!-- BEGIN HEADER-->
+<header id="header">
+  <div class="headerbar"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="headerbar-left">
+      <ul class="header-nav header-nav-options">
+        <li class="header-nav-brand">
+          <div class="brand-holder"> <a href="#"> <span class="text-lg text-bold text-primary">STORE ANALYZER</span> </a> </div>
+        </li>
+        <li> <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </li>
+        <li> 
+          <!-- Search form -->
+          <form class="navbar-search" role="search">
+            <div class="form-group floating-label">
+              <input type="text" class="form-control" name="headerSearch" placeholder="Enter your keyword">
+            </div>
+            <button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="headerbar-right">
+     
+      
+      <ul class="header-nav header-nav-profile">
+        <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown"> 
+             <span class="ptop10"><i class="glyphicon glyphicon-stats"></i></span>
+            <span class="profile-info"> Select Company... </span> </a>
+          <ul class="dropdown-menu animation-dock">
+            <li><a href="#">KVP LLC</a></li>
+            <li><a href="#">KVP - CT</a></li>
+            <li><a href="#">KVP - IN</a></li>
+            <li><a href="#">KVP - PA</a></li>
+            <li><a href="#">KVP - NCT</a></li>
+            
+          </ul>
+          
+        </li>
+          <li class="dropdown"> <a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown"> 
+             <span class="ptop10"><i class="glyphicon glyphicon-th "></i></span>
+              <span class="profile-info"> Select Store... </span> </a>
+          <ul class="dropdown-menu animation-dock">
+            <li><a href="#">KVP LLC</a></li>
+            <li><a href="#">KVP - CT</a></li>
+            <li><a href="#">KVP - IN</a></li>
+            <li><a href="#">KVP - PA</a></li>
+            <li><a href="#">KVP - NCT</a></li>
+            
+          </ul>
+          
+        </li>
+          <li class="hidden-xs sa-message"> <a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown"> <i class="fa fa-bell"></i><sup class="badge style-danger">4</sup> </a>
+          <ul class="dropdown-menu animation-expand">
+            <li class="dropdown-header">Today's messages</li>
+            <li> <a class="alert alert-callout alert-warning" href="javascript:void(0);"> <img class="pull-right img-circle dropdown-avatar" src="images/avatar2.jpg" alt=""> <strong>Alex Anistor</strong><br>
+              <small>Testing functionality...</small> </a> </li>
+            <li> <a class="alert alert-callout alert-info" href="javascript:void(0);"> <img class="pull-right img-circle dropdown-avatar" src="images/avatar3.jpg" alt=""> <strong>Alicia Adell</strong><br>
+              <small>Reviewing last changes...</small> </a> </li>
+            <li class="dropdown-header">Options</li>
+            <li><a href="#">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+            <li><a href="#">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+          </ul>
+          <!--end .dropdown-menu --> 
+        </li>
+          <li> </li>
+           
+            <li class="dropdown hidden-xs sa-logout"><a href="#"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+       
+        <!--end .dropdown -->
+      </ul>
+      <!--end .header-nav-profile -->
+      <ul class="header-nav header-nav-toggle">
+        
+        <li> <a class="btn btn-icon-toggle btn-default" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false"> <i class="fa fa-ellipsis-v"></i> </a> </li>
+      </ul>
+      <!--end .header-nav-toggle --> 
+    </div>
+    <!--end #header-navbar-collapse --> 
+  </div>
+</header>
+<!-- END HEADER--> 
+
+<!-- BEGIN BASE-->
+<div id="base"> 
+  <!-- BEGIN OFFCANVAS LEFT -->
+  <div class="offcanvas"> </div>
+  <!--end .offcanvas--> 
+  <!-- END OFFCANVAS LEFT --> 
+  
+  <!-- BEGIN CONTENT-->
+  <div id="content">
+    <section>
+      <div class="section-header">
+        <ol class="breadcrumb">
+          <li class="active">Breadcrumb</li>
+        </ol>
+      </div>
+      <div class="section-body">
+          <div class="row">
+        <div class="col-lg-12 col-md-12">
+           <h1 class="text-primary col-md-5 padding-left-0">Applicant Details</h1> 
+            
+        </div>
+        <!--end .col -->
+       
+      </div>
+   
+      <div class="row"> 
+        <!-- Data Panel -->
+        <div class="col-md-12 col-sm-12">
+            
+            <div class="card">
+						
+						<div class="card-body tab-content">
+                            <form class="form" role="form">
+							<div class="tabbable">
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#personal-info" data-toggle="tab">personal info</a></li>
+                <li class=""><a href="#qualification" data-toggle="tab">Qualifications</a></li>
+                <li class=""><a href="#questions" data-toggle="tab">Questions</a></li>
+                
+    
+            </ul>
+
+            <div class="tab-content emp-profile">
+                    
+                <div class="tab-pane active" id="personal-info">
+                    
+                    <div class="row">
+
+                        <div class="col-md-6"><h4 class="color-main">Job Title : <span class="color-graydark" >Consultant</span></h4></div>
+                        <div class="col-md-6 textalign-right"><h4 class="color-main">Application Date : <span class="color-graydark" >02.11.2015</span></h4></div>
+                    </div>
+
+                        <div class="personal-details">
+
+                            <h3 class="text-primary ">Personal Details</h3>
+
+                            
+
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        <input type="hidden" id="hdnID" value="0" name="Id">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="FirstName" name="FirstName">
+                                        <label class="sa-primary-dark"  for="First_Name">First Name</label>
+                                        <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="LastName" name="LastName">
+                                        <label class="sa-primary-dark"  for="Last_Name">Last Name</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field MiddleName must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="MiddleName" name="MiddleName">
+                                        <label class="sa-primary-dark"  for="Middle_Name">Middle Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field Suffix must be a string or array type with a maximum length of '50'." data-val-maxlength-max="50" id="Suffix" name="Suffix">
+                                        <label class="sa-primary-dark"  for="Suffix">Suffix</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                       
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field Nickname must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="Nickname" name="Nickname" type="text" value="">
+                                         <label class="sa-primary-dark"  for="Nickname">Nickname</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field PreferedName must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="PreferedName" name="PreferedName" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Prefered_Name">Prefered Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field Email must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="Email" name="Email" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field AlternateEmail must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="AlternateEmail" name="AlternateEmail" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Alternate_Email">Alternate Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+
+                                        <select class="form-control input-sm" data-val="true" data-val-number="The field EmployeeGenderId must be a number." data-val-required="The EmployeeGenderId field is required." id="EmployeeGenderId" name="EmployeeGenderId"><option selected="selected" value="0">Select</option>
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>
+                                        
+                                       <button class="btn btn-primary btn-pd" type="button" data-toggle="modal" data-target="#Gender"><i class="fa fa-plus"></i></button> <label class="sa-primary-dark"  for="Gender">Gender</label>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+
+                                        <select class="form-control input-sm" data-val="true" data-val-number="The field EmployeeCivilStatusId must be a number." data-val-required="The EmployeeCivilStatusId field is required." id="EmployeeCivilStatusId" name="EmployeeCivilStatusId"><option selected="selected" value="0">Select</option>
+<option value="1">Single</option>
+<option value="2">Married</option>
+<option value="3">Widow</option>
+<option value="4">Widower</option>
+</select>
+                                        <label class="sa-primary-dark"  for="Civil_Status">Civil Status</label>
+                                        <button class="btn btn-primary btn-pd" type="button" data-toggle="modal" data-target="#civilStatus"><i class="fa fa-plus"></i></button> 
+                                        
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        
+                                        
+
+                                        <select class="form-control input-sm" data-val="true" data-val-number="The field EmployeeEthnicityId must be a number." data-val-required="The EmployeeEthnicityId field is required." id="EmployeeEthnicityId" name="EmployeeEthnicityId"><option selected="selected" value="0">Select</option>
+</select>
+<label class="sa-primary-dark"  for="Ethnicity">Ethnicity</label>
+                                        <button class="btn btn-primary btn-pd" type="button" data-toggle="modal" data-target="#ethnicity"><i class="fa fa-plus"></i></button> 
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <select class="form-control input-sm" data-val="true" data-val-number="The field EmployeeLanguageId must be a number." data-val-required="The EmployeeLanguageId field is required." id="EmployeeLanguageId" name="EmployeeLanguageId"><option selected="selected" value="0">Select</option>
+</select>
+                                   <label class="sa-primary-dark"  for="Secondary_Language">Secondary Language</label>
+                                        <button class="btn btn-primary btn-pd" type="button" data-toggle="modal" data-target="#secondaryLanguage"><i class="fa fa-plus"></i></button>      
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field HomePhone must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="HomePhone" name="HomePhone" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Home_Phone">Home Phone</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field Mobile must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="Mobile" name="Mobile" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Mobile">Mobile</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field WorkPhone must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="WorkPhone" name="WorkPhone" type="text" value="">
+                                        <label class="sa-primary-dark"  for="Work_Phone">Work Phone</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field WorkExt must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="WorkExt" name="WorkExt" type="text" value="">
+                                        <label class="sa-primary-dark" >Work Ext.</label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="address-details">
+                            <h3 class="text-primary ">Address Details</h3>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <h5 class="h-gray">Permanant Address</h5>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                
+
+                                                <input class="form-control input-sm" data-val="true" data-val-maxlength="The field HomeAddress1 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="HomeAddress1" name="HomeAddress1" type="text" value="">
+<label class="sa-primary-dark"  for="Home_Address_1">Home Address 1</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                
+                                                <input class="form-control input-sm" data-val="true" data-val-maxlength="The field HomeAddress2 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="HomeAddress2" name="HomeAddress2" type="text" value="">
+                                            <label class="sa-primary-dark"  for="Home_Address_2">Home Address 2</label></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                        <div class="form-group floating-label margin-bt-0">
+                                                
+<label class="sa-primary-dark"  for="Country">Country</label>
+ <select class="sa-country sa-select2 input-sm form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+  <option value="  " selected="">Select Country 
+</option><option value="--">none
+</option><option value="AF">Afghanistan 
+</option><option value="AL">Albania 
+</option><option value="DZ">Algeria 
+</option><option value="AS">American Samoa
+</option><option value="AD">Andorra 
+</option><option value="AO">Angola
+</option><option value="AI">Anguilla
+</option><option value="AQ">Antarctica
+</option><option value="AG">Antigua and Barbuda 
+</option><option value="AR">Argentina 
+</option><option value="AM">Armenia 
+</option><option value="AW">Aruba 
+</option><option value="AU">Australia 
+</option><option value="AT">Austria 
+</option><option value="AZ">Azerbaijan
+</option><option value="BS">Bahamas 
+</option><option value="BH">Bahrain 
+</option><option value="BD">Bangladesh
+</option><option value="BB">Barbados
+</option><option value="BY">Belarus 
+</option><option value="BE">Belgium 
+</option><option value="BZ">Belize
+</option><option value="BJ">Benin 
+</option><option value="BM">Bermuda 
+</option><option value="BT">Bhutan
+</option><option value="BO">Bolivia 
+</option><option value="BA">Bosnia and Herzegowina
+</option><option value="BW">Botswana
+</option><option value="BV">Bouvet Island 
+</option><option value="BR">Brazil
+</option><option value="IO">British Indian Ocean Territory
+</option><option value="BN">Brunei Darussalam 
+</option><option value="BG">Bulgaria
+</option><option value="BF">Burkina Faso
+</option><option value="BI">Burundi 
+</option><option value="KH">Cambodia
+</option><option value="CM">Cameroon
+</option><option value="CA">Canada
+</option><option value="CV">Cape Verde
+</option><option value="KY">Cayman Islands
+</option><option value="CF">Central African Republic
+</option><option value="TD">Chad
+</option><option value="CL">Chile 
+</option><option value="CN">China 
+</option><option value="CX">Christmas Island
+</option><option value="CC">Cocos (Keeling) Islands 
+</option><option value="CO">Colombia
+</option><option value="KM">Comoros 
+</option><option value="CG">Congo 
+</option><option value="CD">Congo, the Democratic Republic of the 
+</option><option value="CK">Cook Islands
+</option><option value="CR">Costa Rica
+</option><option value="CI">Cote d'Ivoire 
+</option><option value="HR">Croatia (Hrvatska)
+</option><option value="CU">Cuba
+</option><option value="CY">Cyprus
+</option><option value="CZ">Czech Republic
+</option><option value="DK">Denmark 
+</option><option value="DJ">Djibouti
+</option><option value="DM">Dominica
+</option><option value="DO">Dominican Republic
+</option><option value="TP">East Timor
+</option><option value="EC">Ecuador 
+</option><option value="EG">Egypt 
+</option><option value="SV">El Salvador 
+</option><option value="GQ">Equatorial Guinea 
+</option><option value="ER">Eritrea 
+</option><option value="EE">Estonia 
+</option><option value="ET">Ethiopia
+</option><option value="FK">Falkland Islands (Malvinas) 
+</option><option value="FO">Faroe Islands 
+</option><option value="FJ">Fiji
+</option><option value="FI">Finland 
+</option><option value="FR">France
+</option><option value="FX">France, Metropolitan
+</option><option value="GF">French Guiana 
+</option><option value="PF">French Polynesia
+</option><option value="TF">French Southern Territories 
+</option><option value="GA">Gabon 
+</option><option value="GM">Gambia
+</option><option value="GE">Georgia 
+</option><option value="DE">Germany 
+</option><option value="GH">Ghana 
+</option><option value="GI">Gibraltar 
+</option><option value="GR">Greece
+</option><option value="GL">Greenland 
+</option><option value="GD">Grenada 
+</option><option value="GP">Guadeloupe
+</option><option value="GU">Guam
+</option><option value="GT">Guatemala 
+</option><option value="GN">Guinea
+</option><option value="GW">Guinea-Bissau 
+</option><option value="GY">Guyana
+</option><option value="HT">Haiti 
+</option><option value="HM">Heard and Mc Donald Islands 
+</option><option value="VA">Holy See (Vatican City State) 
+</option><option value="HN">Honduras
+</option><option value="HK">Hong Kong 
+</option><option value="HU">Hungary 
+</option><option value="IS">Iceland 
+</option><option value="IN">India 
+</option><option value="ID">Indonesia 
+</option><option value="IR">Iran (Islamic Republic of)
+</option><option value="IQ">Iraq
+</option><option value="IE">Ireland 
+</option><option value="IL">Israel
+</option><option value="IT">Italy 
+</option><option value="JM">Jamaica 
+</option><option value="JP">Japan 
+</option><option value="JO">Jordan
+</option><option value="KZ">Kazakhstan
+</option><option value="KE">Kenya 
+</option><option value="KI">Kiribati
+</option><option value="KP">Korea, Democratic People's Republic of
+</option><option value="KR">Korea, Republic of
+</option><option value="KW">Kuwait
+</option><option value="KG">Kyrgyzstan
+</option><option value="LA">Lao People's Democratic Republic
+</option><option value="LV">Latvia
+</option><option value="LB">Lebanon 
+</option><option value="LS">Lesotho 
+</option><option value="LR">Liberia 
+</option><option value="LY">Libyan Arab Jamahiriya
+</option><option value="LI">Liechtenstein 
+</option><option value="LT">Lithuania 
+</option><option value="LU">Luxembourg
+</option><option value="MO">Macau 
+</option><option value="MK">Macedonia, The Former Yugoslav Republic of
+</option><option value="MG">Madagascar
+</option><option value="MW">Malawi
+</option><option value="MY">Malaysia
+</option><option value="MV">Maldives
+</option><option value="ML">Mali
+</option><option value="MT">Malta 
+</option><option value="MH">Marshall Islands
+</option><option value="MQ">Martinique
+</option><option value="MR">Mauritania
+</option><option value="MU">Mauritius 
+</option><option value="YT">Mayotte 
+</option><option value="MX">Mexico
+</option><option value="FM">Micronesia, Federated States of 
+</option><option value="MD">Moldova, Republic of
+</option><option value="MC">Monaco
+</option><option value="MN">Mongolia
+</option><option value="MS">Montserrat
+</option><option value="MA">Morocco 
+</option><option value="MZ">Mozambique
+</option><option value="MM">Myanmar 
+</option><option value="NA">Namibia 
+</option><option value="NR">Nauru 
+</option><option value="NP">Nepal 
+</option><option value="NL">Netherlands 
+</option><option value="AN">Netherlands Antilles
+</option><option value="NC">New Caledonia 
+</option><option value="NZ">New Zealand 
+</option><option value="NI">Nicaragua 
+</option><option value="NE">Niger 
+</option><option value="NG">Nigeria 
+</option><option value="NU">Niue
+</option><option value="NF">Norfolk Island
+</option><option value="MP">Northern Mariana Islands
+</option><option value="NO">Norway
+</option><option value="OM">Oman
+</option><option value="PK">Pakistan
+</option><option value="PW">Palau 
+</option><option value="PA">Panama
+</option><option value="PG">Papua New Guinea
+</option><option value="PY">Paraguay
+</option><option value="PE">Peru
+</option><option value="PH">Philippines 
+</option><option value="PN">Pitcairn
+</option><option value="PL">Poland
+</option><option value="PT">Portugal
+</option><option value="PR">Puerto Rico 
+</option><option value="QA">Qatar 
+</option><option value="RE">Reunion 
+</option><option value="RO">Romania 
+</option><option value="RU">Russian Federation
+</option><option value="RW">Rwanda
+</option><option value="KN">Saint Kitts and Nevis 
+</option><option value="LC">Saint LUCIA 
+</option><option value="VC">Saint Vincent and the Grenadines
+</option><option value="WS">Samoa 
+</option><option value="SM">San Marino
+</option><option value="ST">Sao Tome and Principe 
+</option><option value="SA">Saudi Arabia
+</option><option value="SN">Senegal 
+</option><option value="SC">Seychelles
+</option><option value="SL">Sierra Leone
+</option><option value="SG">Singapore 
+</option><option value="SK">Slovakia (Slovak Republic)
+</option><option value="SI">Slovenia
+</option><option value="SB">Solomon Islands 
+</option><option value="SO">Somalia 
+</option><option value="ZA">South Africa
+</option><option value="GS">South Georgia and the South Sandwich Islands
+</option><option value="ES">Spain 
+</option><option value="LK">Sri Lanka 
+</option><option value="SH">St. Helena
+</option><option value="PM">St. Pierre and Miquelon 
+</option><option value="SD">Sudan 
+</option><option value="SR">Suriname
+</option><option value="SJ">Svalbard and Jan Mayen Islands
+</option><option value="SZ">Swaziland 
+</option><option value="SE">Sweden
+</option><option value="CH">Switzerland 
+</option><option value="SY">Syrian Arab Republic
+</option><option value="TW">Taiwan, Province of China 
+</option><option value="TJ">Tajikistan
+</option><option value="TZ">Tanzania, United Republic of
+</option><option value="TH">Thailand
+</option><option value="TG">Togo
+</option><option value="TK">Tokelau 
+</option><option value="TO">Tonga 
+</option><option value="TT">Trinidad and Tobago 
+</option><option value="TN">Tunisia 
+</option><option value="TR">Turkey
+</option><option value="TM">Turkmenistan
+</option><option value="TC">Turks and Caicos Islands
+</option><option value="TV">Tuvalu
+</option><option value="UG">Uganda
+</option><option value="UA">Ukraine 
+</option><option value="AE">United Arab Emirates
+</option><option value="GB">United Kingdom
+</option><option value="US">United States 
+</option><option value="UM">United States Minor Outlying Islands
+</option><option value="UY">Uruguay 
+</option><option value="UZ">Uzbekistan
+</option><option value="VU">Vanuatu 
+</option><option value="VE">Venezuela 
+</option><option value="VN">Viet Nam
+</option><option value="VG">Virgin Islands (British)
+</option><option value="VI">Virgin Islands (U.S.) 
+</option><option value="WF">Wallis and Futuna Islands 
+</option><option value="EH">Western Sahara
+</option><option value="YE">Yemen 
+</option><option value="YU">Yugoslavia
+</option><option value="ZM">Zambia
+</option><option value="ZW">Zimbabwe
+</option>
+</select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                
+                                                
+                                                
+                                                <label class="sa-primary-dark"  for="State">State</label>
+ <select class="sa-state sa-select2 input-sm form-control select2-hidden-accessible" disabled="disabled" tabindex="-1" aria-hidden="true">
+  <option value="  " selected="">Select State
+</option><option value="--">none
+</option><option value="AF">Afghanistan 
+</option><option value="AL">Albania 
+</option><option value="DZ">Algeria 
+</option><option value="AS">American Samoa
+</option><option value="AD">Andorra 
+</option><option value="AO">Angola
+</option><option value="AI">Anguilla
+</option><option value="AQ">Antarctica
+
+</select>
+                                                
+                                              
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                
+                                                <label class="sa-primary-dark"  for="City">City</label>
+ <select class="sa-city sa-select2 input-sm form-control select2-hidden-accessible" disabled="disabled" tabindex="-1" aria-hidden="true">
+  <option value="  " selected="">Select State
+</option><option value="--">none
+</option><option value="AF">Afghanistan 
+</option><option value="AL">Albania 
+</option><option value="DZ">Algeria 
+</option><option value="AS">American Samoa
+</option><option value="AD">Andorra 
+</option><option value="AO">Angola
+</option><option value="AI">Anguilla
+</option><option value="AQ">Antarctica
+
+</select>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                
+                                                
+                                                
+                                                <label class="sa-primary-dark"  for="Zipcode">Zipcode</label>
+ <select class="sa-zipcode sa-select2 input-sm form-control select2-hidden-accessible" disabled="disabled" tabindex="-1" aria-hidden="true">
+  <option value="  " selected="">Select State
+</option><option value="--">none
+</option><option value="AF">Afghanistan 
+</option><option value="AL">Albania 
+</option><option value="DZ">Algeria 
+</option><option value="AS">American Samoa
+</option><option value="AD">Andorra 
+</option><option value="AO">Angola
+</option><option value="AI">Anguilla
+</option><option value="AQ">Antarctica
+
+</select>
+                                                 
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <h5 class="h-gray">Mailing Address</h5>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                
+                                                <input class="form-control input-sm" data-val="true" data-val-maxlength="The field MailingAddress1 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="MailingAddress1" name="MailingAddress1" type="text" value=""><label class="sa-primary-dark"  for="Mailing_Address_1">Mailing Address 1</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group floating-label">
+                                                
+                                                <input class="form-control input-sm" data-val="true" data-val-maxlength="The field MailingAddress2 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="MailingAddress2" name="MailingAddress2" type="text" value=""><label class="sa-primary-dark"  for="Mailing_Address_2">Mailing Address 2</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                <label class="sa-primary-dark"  for="Country">Country</label>
+                                                <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-default"><input name="MailingCountry_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select Country..." tabindex="0" aria-disabled="false" aria-readonly="false" aria-autocomplete="list" aria-owns="MailingCountry_listbox" aria-busy="false" aria-activedescendant="MailingCountry_option_selected" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="MailingCountry_listbox">select</span></span></span><input class="form-control input-sm" id="MailingCountry" name="MailingCountry" type="text" data-role="combobox" aria-disabled="false" aria-readonly="false" style="display: none;"></span> 
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                <label class="sa-primary-dark"  for="State">State</label>
+
+                                                <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="MailingState_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select State..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="MailingState_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="MailingState_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="MailingState" name="MailingState" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span> 
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                <label class="sa-primary-dark"  for="City">City</label>
+
+                                                <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="MailingCity_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select City..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="MailingCity_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="MailingCity_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="MailingCity" name="MailingCity" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span> 
+
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group floating-label">
+                                                <label class="sa-primary-dark"  for="Zipcode">Zipcode</label>
+
+                                                <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="MailingZipcode_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select Zipcode..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="MailingZipcode_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="MailingZipcode_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="MailingZipcode" name="MailingZipcode" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span>                     
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="emergency-contact">
+                            <h3 class="text-primary ">Emergency Contact</h3>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactFirstName must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="EmergencyContactFirstName" name="EmergencyContactFirstName" type="text" value=""><label class="sa-primary-dark"  for="First_Name">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactLastName must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="EmergencyContactLastName" name="EmergencyContactLastName" type="text" value=""><label class="sa-primary-dark"  for="Last_Name">Last Name</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                       
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactMiddleName must be a string or array type with a maximum length of '200'." data-val-maxlength-max="200" id="EmergencyContactMiddleName" name="EmergencyContactMiddleName" type="text" value=""> <label class="sa-primary-dark"  for="Middle_Name">Middle Name</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" id="relationship" name="relationship" type="text" value="">
+                                   <label class="sa-primary-dark"  for="Relationship">Relationship</label> </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactHomeAddress1 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="EmergencyContactHomeAddress1" name="EmergencyContactHomeAddress1" type="text" value=""><label class="sa-primary-dark"  for="Home_Address_1">Home Address 1</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactHomeAddress2 must be a string or array type with a maximum length of '500'." data-val-maxlength-max="500" id="EmergencyContactHomeAddress2" name="EmergencyContactHomeAddress2" type="text" value=""><label class="sa-primary-dark"  for="Home_Address_2">Home Address 2</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        <label class="sa-primary-dark"  for="Country">Country</label>
+
+                                        <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-default"><input name="EmergencyContactCountry_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select Country..." tabindex="0" aria-disabled="false" aria-readonly="false" aria-autocomplete="list" aria-owns="EmergencyContactCountry_listbox" aria-busy="false" aria-activedescendant="EmergencyContactCountry_option_selected" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="EmergencyContactCountry_listbox">select</span></span></span><input class="form-control input-sm" id="EmergencyContactCountry" name="EmergencyContactCountry" type="text" data-role="combobox" aria-disabled="false" aria-readonly="false" style="display: none;"></span>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        <label class="sa-primary-dark"  for="State">State</label>
+
+                                        <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="EmergencyContactState_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select State..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="EmergencyContactState_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="EmergencyContactState_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="EmergencyContactState" name="EmergencyContactState" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        <label class="sa-primary-dark"  for="City">City</label>
+
+                                        <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="EmergencyContactCity_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select City..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="EmergencyContactCity_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="EmergencyContactCity_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="EmergencyContactCity" name="EmergencyContactCity" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span>
+                                        
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group floating-label">
+                                        <label class="sa-primary-dark"  for="Zipcode">Zipcode</label>
+
+
+                                        <span class="k-widget k-combobox k-header form-control input-sm"><span tabindex="-1" unselectable="on" class="k-dropdown-wrap k-state-disabled"><input name="EmergencyContactZipcode_input" class="k-input form-control input-sm" type="text" autocomplete="off" maxlength="524288" role="combobox" aria-expanded="false" placeholder="Select Zipcode..." tabindex="0" disabled="disabled" aria-disabled="true" aria-readonly="false" aria-autocomplete="list" aria-owns="EmergencyContactZipcode_listbox" style="width: 100%;"><span tabindex="-1" unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-arrow-s" role="button" tabindex="-1" aria-controls="EmergencyContactZipcode_listbox">select</span></span></span><input class="form-control input-sm" disabled="disabled" id="EmergencyContactZipcode" name="EmergencyContactZipcode" type="text" data-role="combobox" aria-disabled="true" aria-readonly="false" style="display: none;"></span>
+                                        
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactHomePhone must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="EmergencyContactHomePhone" name="EmergencyContactHomePhone" type="text" value=""><label class="sa-primary-dark"  for="Home_Phone">Home Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactMobile must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="EmergencyContactMobile" name="EmergencyContactMobile" type="text" value=""><label class="sa-primary-dark"  for="Mobile">Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group floating-label">
+                                        
+                                        <input class="form-control input-sm" data-val="true" data-val-maxlength="The field EmergencyContactEmail must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" id="EmergencyContactEmail" name="EmergencyContactEmail" type="text" value=""><label class="sa-primary-dark"  for="Email">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h3 class="text-primary ">Social Media</h3>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="Facebook" name="Facebook"><div class="form-control-line"></div>
+                                <label for="Facebook" class="control-label sa-primary-dark"><i class="fa fa-facebook fa-lg"></i>&nbsp;Facebook</label>
+								</div>
+                                    
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="Twitter" name="Twitter"><div class="form-control-line"></div>
+                                <label for="Twitter" class="control-label sa-primary-dark"><i class="fa fa-twitter"></i>&nbsp;Twitter</label>
+								</div>
+                                    
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="Skype" name="Skype"><div class="form-control-line"></div>
+                                <label for="Skype" class="control-label sa-primary-dark"><i class="fa fa-skype"></i>&nbsp;Skype</label>
+								</div>
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="Linkedin" name="Linkedin"><div class="form-control-line"></div>
+                                <label for="username17" class="control-label sa-primary-dark"><i class="fa fa-linkedin"></i>&nbsp;Linkedin</label>
+								</div>
+                                    
+                                    
+                                </div>
+
+                                <div class="col-md-3">
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="WindowsLiveMessanger" name="WindowsLiveMessanger"><div class="form-control-line"></div>
+                                <label for="WindowsLiveMessanger" class="control-label sa-primary-dark"><i class="fa fa-windows"></i>&nbsp;Windows Live Messanger</label>
+								</div>
+                                    
+                                    
+                                </div>
+                                <div class="col-md-3">
+                                    
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="Pinterest" name="Pinterest"><div class="form-control-line"></div>
+                                <label for="Pinterest" class="control-label sa-primary-dark"><i class="fa fa-pinterest"></i>&nbsp;Pinterest</label>
+								</div>
+                                    
+                                     
+                                </div>
+                                
+                                
+                                <div class="col-md-3">
+                                    
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control" id="AIMMessanger" name="AIMMessanger"><div class="form-control-line"></div>
+                                <label for="AIMMessanger" class="control-label sa-primary-dark"><i class="zmdi zmdi-person"></i>&nbsp;AIM Messanger</label>
+								</div>
+                                    
+                                     
+                                </div><div class="col-md-3">
+                                    
+                                    
+                                    
+                                    <div class="form-group floating-label">
+							<input type="text" class="form-control"  id="Blog" name="Blog"><div class="form-control-line"></div>
+                                <label for="Blog" class="control-label sa-primary-dark"><i class="fa fa-wordpress"></i>&nbsp;Blog</label>
+								</div>
+                                    
+                                     
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                 
+                                 
+                            </div>
+                        </div>
+ 
+ 
+
+                        <div class="edu-qualification">
+
+                            <h3 class="text-primary ">Education Qualifications</h3>
+                        </div>
+
+                    </div>
+
+                <div class="tab-pane" id="qualification">
+
+               *Please refer the Telerik table controller
+
+
+                    <div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-primary ">Education</h3>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-body no-padding">
+							<div class="table-responsive no-margin">
+								<table class="table table-striped no-margin">
+									<thead>
+										<tr>
+											
+											<th>Degree</th>
+											<th>Institute Name</th>
+											<th>No of Attended Year</th>
+											<th>Graduated</th>
+                                            <th> </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										
+									</tbody>
+								</table>
+							</div><!--end .table-responsive -->
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+				</div><!--end .col -->
+			</div>
+                    
+            <div class="row">
+				<div class="col-lg-12">
+					<h3 class="text-primary ">Employment</h3>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-body no-padding">
+							<div class="table-responsive no-margin">
+								<table class="table table-striped no-margin">
+									<thead>
+										<tr>
+											
+											<th>Employee Name</th>
+											<th>Supervisor Name</th>
+											<th>From</th>
+											<th>To</th>
+											<th>Start Salary</th>
+											<th>Status</th>
+                                            <th> </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										<tr>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+                                            <td><button type="button" class="btn btn-primary btnicon-pd" title="Edit"><i class="fa fa-edit"></i></button>&nbsp;<button type="button" class="btn btn-primary btnicon-pd" title="Delete"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                            
+										</tr>
+										
+									</tbody>
+								</table>
+							</div><!--end .table-responsive -->
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+				</div><!--end .col -->
+			</div>
+
+                </div>
+
+                <div class="tab-pane" id="questions">
+
+
+
+                 <div class="ques-1  pull-left ">                       
+                 <div class="question-title" >
+								Screening Question Type 01
+							</div>
+                <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								 <span class="glyphicon glyphicon-ok color-green padding-right-4"></span>alert message.
+								
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								 <span class="glyphicon glyphicon-remove color-red padding-right-4"></span>alert message.
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								<span class="glyphicon glyphicon-ok color-green padding-right-4  "></span> alert message.
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								 <span class="glyphicon glyphicon-remove color-red"></span> alert message.
+							</div>
+
+                </div>
+                    
+                    
+                <div class="ques-2 pull-left ">                       
+                 <div class="question-title" >
+								Screening Question Type 02
+							</div>
+                    <div class="question-subtitle" >
+								Category 1
+							</div>
+                <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+						<span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-gray"></span>
+                        
+								
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								 <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-gray"></span>
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								<span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-gray"></span>
+                        <span class="glyphicon glyphicon-star color-gray"></span>
+							</div>
+                    <div class="alert alert-callout alert-success col-md-9 " role="alert">
+								<strong>Well done!</strong> You successfully read this important alert message.
+							</div>
+                    <div class="alert alert-callout alert-warning col-md-3 border-0" role="alert">
+								 <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-yellow"></span>
+                        <span class="glyphicon glyphicon-star color-gray"></span>
+							</div>
+
+                </div>
+                    
+                    </div>
+                
+                <div class="tab-pane" id="backoffice">
+
+wwwwwwwwwwwwwsssss
+
+
+                </div>
+
+                </form>
+            </div>
+
+        </div>
+						</div><!--end .card-body -->
+					</div>
+					 				
+				</div>
+          
+          
+          
+        
+        
+      </div>
+      <!--end .row --> 
+      
+           
+     
+      <!--end .section-body --> 
+    </section>
+  </div>
+  <!--end #content--> 
+  <!-- END CONTENT --> 
+  
+  <!-- BEGIN MENUBAR-->
+  <div id="menubar" class="menubar-inverse  animate">
+    <div class="menubar-fixed-panel">
+      <div> <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);"> <i class="fa fa-bars"></i> </a> </div>
+      <div class="expanded"> <a href="#"> <span class="text-lg text-bold text-primary ">STORE&nbsp;ANALYZER</span> </a> </div>
+    </div>
+    <div class="nano has-scrollbar st-nano" >
+      <div class="nano-content" tabindex="0" >
+        <div class="menubar-scroll-panel"> 
+          <!-- BEGIN MAIN MENU -->
+          
+          <ul id="main-menu" class="gui-controls">
+            <!-- BEGIN DASHBOARD -->
+            <li class="active"> <a href="#" class="active">
+              <div class="gui-icon"><i class="glyphicon glyphicon-home"></i></div>
+              <span class="title">Dashboard</span> </a> </li>
+            <!--end /menu-li --> 
+            <!-- END DASHBOARD --> 
+            
+            <!-- BEGIN EMAIL -->
+            <li class="gui-folder"> <a>
+              <div class="gui-icon"><i class="fa fa-suitcase"></i></div>
+              <span class="title">Payroll Management </span> </a> 
+              <!--start submenu -->
+              <ul>
+                <li><a href="#"><span class="title">Reports</span></a></li>
+                <li><a href="#"><span class="title">Pay Process</span></a></li>
+                <li><a href="#"><span class="title">Unprocessed</span></a></li>
+                <li><a href="#"><span class="title">Store Status</span></a></li>
+                <li><a href="#"><span class="title">Payroll Data</span></a></li>
+                <li><a href="#"><span class="title">Export</span></a></li>
+              </ul>
+              <!--end /submenu --> 
+            </li>
+            <!--end /menu-li --> 
+            <!-- END EMAIL --> 
+            
+            <!-- BEGIN UI -->
+            <li class="gui-folder"> <a>
+              <div class="gui-icon"><i class="fa fa-users"></i></div>
+              <span class="title">Human Resource Management </span> </a> 
+              <!--start submenu -->
+              <ul>
+                <li><a href="#"><span class="title">Employee Management</span></a></li>
+              </ul>
+              <!--end /submenu --> 
+            </li>
+            <!--end /menu-li --> 
+            <!-- END UI --> 
+            
+            <!-- BEGIN TABLES -->
+            <li class="gui-folder"> <a>
+              <div class="gui-icon"><i class="fa fa-th"></i></div>
+              <span class="title">Store Management </span> </a> 
+              <!--start submenu -->
+              <ul>
+                <li><a href="#"><span class="title"> DM Log</span></a></li>
+                <li><a href="#"><span class="title"> Gallery</span></a></li>
+              </ul>
+              <!--end /submenu --> 
+            </li>
+              
+              <li class="gui-folder"> <a>
+              <div class="gui-icon"><i class="glyphicon glyphicon-eye-open"></i></div>
+              <span class="title">Hiring Management </span> </a> 
+              <!--start submenu -->
+              <ul>
+                <li><a href="DashboardPosition.html"><span class="title"> Application Que</span></a></li>
+                
+              </ul>
+              <!--end /submenu --> 
+            </li>
+            <!--end /menu-li --> 
+            <!-- END TABLES -->
+            
+          </ul>
+          <!--end .main-menu --> 
+          <!-- END MAIN MENU -->
+          
+          <div class="menubar-foot-panel"> <small class="no-linebreak hidden-folded"> <span class="opacity-75">Powered by <strong>Store Analyzer</strong> 2015 </span> </small> </div>
+        </div>
+      </div>
+      <div class="nano-pane" style="display: none;">
+        <div class="nano-slider" style="height: 543px; transform: translate(0px, 0px);"></div>
+      </div>
+    </div>
+    <!--end .menubar-scroll-panel--> 
+  </div>
+  <!--end #menubar--> 
+  <!-- END MENUBAR --> 
+  
+  <!-- BEGIN OFFCANVAS RIGHT -->
+  <div class="offcanvas"> 
+    
+    <!-- BEGIN OFFCANVAS SEARCH -->
+    <div id="offcanvas-search" class="offcanvas-pane width-8">
+      <div class="offcanvas-head">
+        <header class="text-primary"><i class="glyphicon glyphicon-cog"></i>  Sestings</header>
+        <div class="offcanvas-tools"> <a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas"> <i class="zmdi zmdi-close"></i> </a> </div>
+      </div>
+      <div class="offcanvas-body no-padding">
+        <ul class="list ">
+          <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-icon"> <img src="images/avatar2.jpg" alt=""> </div>
+            <div class="tile-text"> Jessica Cruise <small>123-123-3210</small> </div>
+            </a> </li>        
+          <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-text"> My profile  </div>
+            </a> </li>
+            <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-text">My blog </div>
+            </a> </li>
+            <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-text"> My appointments  </div>
+            </a> </li>
+            <li class="divider-full-bleed"></li>
+            <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-text"> <i class="fa fa-fw fa-lock"></i> Lock  </div>
+            </a> </li>
+            <li class="tile"> <a class="tile-content ink-reaction" href="#" data-toggle="offcanvas" data-backdrop="false">
+            <div class="tile-text"> <i class="fa fa-fw fa-power-off text-danger"></i> Logout </div>
+            </a> </li>
+                              
+        </ul>
+      </div>
+      <!--end .offcanvas-body --> 
+    </div>
+    <!--end .offcanvas-pane --> 
+    <!-- END OFFCANVAS SEARCH --> 
+    
+    <!-- BEGIN OFFCANVAS CHAT -->
+    <div id="offcanvas-chat" class="offcanvas-pane style-default-light width-12">
+      <div class="offcanvas-head style-default-bright">
+        <header class="text-primary">Chat with Ann Laurens</header>
+        <div class="offcanvas-tools"> <a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas"> <i class="fa fa-times"></i> </a> <a class="btn btn-icon-toggle btn-default-light pull-right" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false"> <i class="zmdi zmdi-arrow-back"></i> </a> </div>
+        <form class="form">
+          <div class="form-group floating-label">
+            <textarea name="sidebarChatMessage" id="sidebarChatMessage" class="form-control autosize" rows="1"></textarea>
+            <label for="sidebarChatMessage">Leave a message</label>
+          </div>
+        </form>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-chats">
+          <li>
+            <div class="chat">
+              <div class="chat-avatar"><img class="img-circle" src="images/avatar1.jpg" alt=""></div>
+              <div class="chat-body"> Yes, it is indeed very beautiful. <small>10:03 pm</small> </div>
+            </div>
+            <!--end .chat --> 
+          </li>
+          <li class="chat-left">
+            <div class="chat">
+              <div class="chat-avatar"><img class="img-circle" src="images/avatar9.jpg" alt=""></div>
+              <div class="chat-body"> Did you see the changes? <small>10:02 pm</small> </div>
+            </div>
+            <!--end .chat --> 
+          </li>
+          <li>
+            <div class="chat">
+              <div class="chat-avatar"><img class="img-circle" src="images/avatar1.jpg" alt=""></div>
+              <div class="chat-body"> I just arrived at work, it was quite busy. <small>06:44pm</small> </div>
+              <div class="chat-body"> I will take look in a minute. <small>06:45pm</small> </div>
+            </div>
+            <!--end .chat --> 
+          </li>
+          <li class="chat-left">
+            <div class="chat">
+              <div class="chat-avatar"><img class="img-circle" src="images/avatar9.jpg" alt=""></div>
+              <div class="chat-body"> The colors are much better now. </div>
+              <div class="chat-body"> The colors are brighter than before.
+                I have already sent an example.
+                This will make it look sharper. <small>Mon</small> </div>
+            </div>
+            <!--end .chat --> 
+          </li>
+          <li>
+            <div class="chat">
+              <div class="chat-avatar"><img class="img-circle" src="images/avatar1.jpg" alt=""></div>
+              <div class="chat-body"> Are the colors of the logo already adapted? <small>Last week</small> </div>
+            </div>
+            <!--end .chat --> 
+          </li>
+        </ul>
+      </div>
+      <!--end .offcanvas-body --> 
+    </div>
+    <!--end .offcanvas-pane --> 
+    <!-- END OFFCANVAS CHAT --> 
+    
+  </div>
+  <!--end .offcanvas--> 
+  <!-- END OFFCANVAS RIGHT --> 
+  
+</div>
+<!--end #base--> 
+<!-- END BASE --> 
+    
+<!-- model window-->
+    
+    
+<!-- Modal -->
+  <div class="modal fade" id="Gender" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+        
+    <div class="card">
+            <div class="card-head card-head-sm style-primary">
+							<header>Add a New value</header>
+							<div class="tools">
+								<button class="btn btn-icon-toggle btn-close"><i class="zmdi zmdi-close"></i></button>
+							</div>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<input type="text" class="form-control" id="regular2">
+									<label for="regular2">Value <span class="f_req">*</span></label>
+								</div>
+								<div class="form-group floating-label">
+									<textarea name="textarea2" id="textarea2" class="form-control" rows="3" placeholder=""></textarea>
+									<label for="textarea2">Description</label>
+								</div>
+								
+							</form>
+						</div><!--end .card-body -->
+          <div class="modal-footer">
+              <button class="btn btn-primary btn-pd" type="button"><i class="fa fa-save"></i>&nbsp;Save</button>
+              <button type="reset" class="btn btn-primary btn-pd" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</button>
+        </div>
+               
+					</div>
+        
+      
+    </div>
+  </div>
+    
+    
+    
+    
+      <div class="modal fade" id="civilStatus" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+        
+    <div class="card">
+            <div class="card-head card-head-sm style-primary">
+							<header>Add a New value</header>
+							<div class="tools">
+								<button class="btn btn-icon-toggle btn-close"><i class="zmdi zmdi-close"></i></button>
+							</div>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<input type="text" class="form-control" id="regular2">
+									<label for="regular2">Value <span class="f_req">*</span></label>
+								</div>
+								<div class="form-group floating-label">
+									<textarea name="textarea2" id="textarea2" class="form-control" rows="3" placeholder=""></textarea>
+									<label for="textarea2">Description</label>
+								</div>
+								
+							</form>
+						</div><!--end .card-body -->
+          <div class="modal-footer">
+              <button class="btn btn-primary btn-pd" type="button"><i class="fa fa-save"></i>&nbsp;Save</button>
+              <button type="reset" class="btn btn-primary btn-pd" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</button>
+        </div>
+               
+					</div>
+        
+      
+    </div>
+  </div>
+    
+      <div class="modal fade" id="ethnicity" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+        
+    <div class="card">
+            <div class="card-head card-head-sm style-primary">
+							<header>Add a New value</header>
+							<div class="tools">
+								<button class="btn btn-icon-toggle btn-close"><i class="zmdi zmdi-close"></i></button>
+							</div>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<input type="text" class="form-control" id="regular2">
+									<label for="regular2">Value <span class="f_req">*</span></label>
+								</div>
+								<div class="form-group floating-label">
+									<textarea name="textarea2" id="textarea2" class="form-control" rows="3" placeholder=""></textarea>
+									<label for="textarea2">Description</label>
+								</div>
+								
+							</form>
+						</div><!--end .card-body -->
+          <div class="modal-footer">
+              <button class="btn btn-primary btn-pd" type="button"><i class="fa fa-save"></i>&nbsp;Save</button>
+              <button type="reset" class="btn btn-primary btn-pd" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</button>
+        </div>
+               
+					</div>
+        
+      
+    </div>
+  </div>
+    
+      <div class="modal fade" id="secondaryLanguage" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      
+        
+    <div class="card">
+            <div class="card-head card-head-sm style-primary">
+							<header>Add a New value</header>
+							<div class="tools">
+								<button class="btn btn-icon-toggle btn-close"><i class="zmdi zmdi-close"></i></button>
+							</div>
+						</div>
+						<div class="card-body">
+							<form class="form" role="form">
+								<div class="form-group floating-label">
+									<input type="text" class="form-control" id="regular2">
+									<label for="regular2">Value <span class="f_req">*</span></label>
+								</div>
+								<div class="form-group floating-label">
+									<textarea name="textarea2" id="textarea2" class="form-control" rows="3" placeholder=""></textarea>
+									<label for="textarea2">Description</label>
+								</div>
+								
+							</form>
+						</div><!--end .card-body -->
+          <div class="modal-footer">
+              <button class="btn btn-primary btn-pd" type="button"><i class="fa fa-save"></i>&nbsp;Save</button>
+              <button type="reset" class="btn btn-primary btn-pd" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</button>
+        </div>
+               
+					</div>
+        
+      
+    </div>
+  </div>
+    
+<!-- BEGIN JAVASCRIPT --> 
+<!--jquery--> 
+<script src="scripts/jquery-1.11.2.min.js"></script> 
+<script src="scripts/jquery-migrate-1.2.1.min.js"></script> 
+<!--Bootstrap -->
+<script src="scripts/bootstrap.min.js"></script> 
+<script src="scripts/bootstrap-datepicker.js"></script> 
+<!--Dynamically creates spinning for loading-->
+<script src="scripts/spin.min.js"></script>
+<!--Automatically adjust textarea height-->
+<script src="scripts/jquery.autosize.min.js"></script> 
+<!--Parse, validate, manipulate, and display dates through JavaScript-->
+<script src="scripts/moment.min.js"></script>
+<!--Mac OS X Lion-styled scrollbars feature-->
+<script src="scripts/jquery.nanoscroller.min.js"></script>
+<!-- Data Manipulate -->
+<script src="scripts/dataManipulate.js"></script> 
+<!-- Component behavior -->
+<script src="scripts/component.js"></script>
+<!--StoreAnalyzer-->
+<script src="scripts/demo.js"></script> 
+<!--Bootstrap select-->
+<script src="scripts/bootstrap-select.js"></script> 
+<script src="scripts/dropzone.min.js"></script> 
+<script src="scripts/select2.min.js"></script>
+    
+<script>
+      
+$(document).ready(function() {
+  $(".sa-country").select2();
+    $(".sa-state").select2();
+     $(".sa-city").select2();
+     $(".sa-zipcode").select2();
+    
+     $('.datep').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+    
+});
+ 
+      </script>
+
+    
+<!-- END JAVASCRIPT -->
+
+<div id="device-breakpoints">
+  <div class="device-xs visible-xs" data-breakpoint="xs"></div>
+  <div class="device-sm visible-sm" data-breakpoint="sm"></div>
+  <div class="device-zmdi visible-zmdi" data-breakpoint="zmdi"></div>
+  <div class="device-lg visible-lg" data-breakpoint="lg"></div>
+</div>
+</body>
+</html>
