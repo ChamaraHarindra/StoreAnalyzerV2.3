@@ -219,7 +219,7 @@ h1, .h1  {    margin-top: 0;}
 
 .nav-tabs.wizard {
     background-color: transparent;
-    padding: 0
+    padding: 0;
     width: 100%;
     margin: 1em auto;
     border-radius: .25em;
