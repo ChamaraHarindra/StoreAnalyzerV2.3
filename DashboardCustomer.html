@@ -2411,7 +2411,15 @@ $(document).ready(function() {
     $('.' + $(this).data('rel')).show();
 });
 
+$('.wizard li').click(function() {
+ $(this).prevAll().addClass("completed");
+  $(this).nextAll().removeClass("completed")
+
 });
+
+});
+
+
 
       </script>
 
