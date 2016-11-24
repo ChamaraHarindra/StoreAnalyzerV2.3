@@ -39,7 +39,7 @@ body{font-family: "Segoe UI", sans-serif, Helvetica, Arial, sans-serif}
     background-color: #0aa89e;
     color: #ffffff;
 }
-.dropzone .dz-message {margin:0 !import}
+.dropzone .dz-message {margin:0 !important}
 .tab-content > .tab-pane {padding: 10px;}
 .sa-primary-dark {color:#066265; font-size:14px; font-weight: 500 }
 .form-group > label, .form-group .control-label {
